@@ -91,7 +91,7 @@ attack.com TXT "v=spf1 ip4:1.2.3.4 +all"
 
 2. Configure the tool in config.py
 
-```
+```python
 config ={
 	"attacker_site": b"attack.com", # attack.com
 	"legitimate_site_address": b"admin@bank.com", # legitimate.com
@@ -123,7 +123,7 @@ python3 espoofer.py -id server_a1
 To run epsoofer in client mode, you need to have an account on the target email services. This attack exploits the failure of some email services to perform sufficient validation of emails received from local MUAs. For example, `attacker@gmail.com` tries to impersonate `admin@gmail.com`. 
 1. Configure the tool in config.py
 
-```
+```python
 config ={
 	"legitimate_site_address": b"admin@gmail.com",  
 	"victim_address": b"victim@victim.com", 
